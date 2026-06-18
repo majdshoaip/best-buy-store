@@ -58,5 +58,5 @@ if __name__ == "__main__":
         products.Product("Bose QuietComfort Earbuds", 250, 500),
         products.Product("Google Pixel 7", 500, 250)
     ]
-    best_buy = store.Store(product_list)
-    start(best_buy)
+    my_store = store.Store(product_list)
+    start(my_store)

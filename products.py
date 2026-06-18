@@ -29,7 +29,7 @@ class Product:
         self.active = True
 
     def deactivate(self):
-        """Activates the product."""
+        """Deactivates the product."""
         self.active = False
 
     def buy(self, quantity):

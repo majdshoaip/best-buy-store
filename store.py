@@ -1,5 +1,3 @@
-import products
-
 class Store:
     """Manages a collection of products."""
     def __init__(self, products_list):
@@ -22,7 +20,8 @@ class Store:
         """Returns a list of all active products."""
         return [product for product in self.products if product.is_active()]
 
-    def order(self, shopping_list):
+    @staticmethod
+    def order(shopping_list):
         """Processes an order of multiple products."""
         total_price = 0.0
         for product, quantity in shopping_list:
